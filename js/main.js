@@ -7,7 +7,7 @@ $(document).ready(function () {
 });
 
 $("#myForm").validate({
-  onkeyup: function (element) {
+  onfocusout: function (element) {
     //去除空格
     var value = this.elementValue(element).replace(/ /g, "");
     $(element).val(value);
