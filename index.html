@@ -21,23 +21,81 @@
 	<!-- <meta property="og:description" content="FB的描述"> -->
 	<!-- <meta content="images/img_for_fb.jpg" property="og:image"/> -->
 	<!-- <meta property="fb:app_id" content="" />  -->
-
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="sass/all.min.css">
 </head>
 
+
 <body>
-	<!-- 開始程式 -->
-	
-<input type="file" accept="image/*" capture="camera" />
-<p>123</p>
+	<div style="max-width: 500px; margin:20px auto; padding: 10px;">
+		<form id="myForm">
+			<div class="form-group">
+				<label>必填</label>
+				<input class="form-control" type="text" name="NAME">
+			</div>
+
+			<div class="form-group">
+				<label for="DOWN">下拉式必填</label>
+				<select class="form-control" name="DOWN">
+					<option value="" disabled selected>請選擇</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</select>
+			</div>
+
+			<div class="form-group">
+				<label>身分證字號</label>
+				<input class="form-control" type="text" name="ID">
+			</div>
+
+			<div class="form-group">
+				<label>統一編號</label>
+				<input class="form-control" type="text" name="GUI">
+			</div>
+
+			<div class="form-group">
+				<label>身分證字號/統號</label>
+				<input class="form-control" type="text" name="IDGUI">
+			</div>
+
+			<div class="form-group">
+				<label>連絡電話(手機)</label>
+				<input class="form-control" type="tel" name="MOBILE">
+			</div>
+
+			<div class="form-group">
+				<label>電子郵件</label>
+				<input class="form-control" type="email" name="EMAIL">
+			</div>
+
+			<div class="form-group">
+				<label>資本額(純數字正整數)</label>
+				<input class="form-control" type="number" name="MONEY">
+			</div>
+
+			<div class="form-group">
+				<label>出生日期(19870604)</label>
+				<input class="form-control" type="text" name="BIRTHDAY">
+			</div>
+
+
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+	</div>
+
+
 
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+	<script type="text/javascript" src="js/validate/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/validate/additional-methods.min.js"></script>
+	<script type="text/javascript" src="js/validate/messages_zh_TW.min.js"></script>
+	<script src="https://unpkg.com/taiwan-id-validator"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 
 
 </body>
 
-
 </html>
-

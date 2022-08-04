@@ -42,7 +42,8 @@ img{
 } 
 
 body {
-	line-height: 1;
+	line-height: 1.3;
+	letter-spacing: 1.3px;
 	outline:none;
 	/*google思源字體*/
 	font-family: 'Noto Sans TC',Arial;
@@ -74,12 +75,4 @@ img{
 	max-width: 100%;
 	height: auto;
 }
-/*開始css*/
 
-
-
-
-/*手機板變PC版*/
-@media screen and (min-width:1200px){}
-/*PC變成手機板*/
-@media screen and (max-width:375px){}
