@@ -47,9 +47,9 @@ $("#myForm").validate({
       required: true,
       mobile: true
     },
-    ID: {
+    NUMBER_ID: {
       required: true,
-      id: true
+      numberId: true
     },
     GUI: {
       required: true,
@@ -82,7 +82,7 @@ jQuery.validator.addMethod("mobile", function (value, element) {
   return this.optional(element) || mobileValid;
 }, "手機格式錯誤");
 // 身分證格式檢核
-jQuery.validator.addMethod("id", function (value, element) {
+jQuery.validator.addMethod("numberId", function (value, element) {
   return this.optional(element) || taiwanIdValidator.isNationalIdentificationNumberValid(value);
 }, "身分證格式錯誤");
 // 統一編號格式檢核
